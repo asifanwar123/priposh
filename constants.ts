@@ -42,7 +42,8 @@ export const PRODUCTS: Product[] = [
     description: 'Elegant black ensemble for special occasions.',
     tags: ['women', 'festive', 'black'],
     sizes: SIZES,
-    discountPercentage: 14
+    discountPercentage: 14,
+    isNew: true
   },
   {
     id: '3',
@@ -82,7 +83,8 @@ export const PRODUCTS: Product[] = [
     description: 'Soft tea pink casual wear for everyday elegance.',
     tags: ['women', 'casual', 'pink'],
     sizes: SIZES,
-    discountPercentage: 29
+    discountPercentage: 29,
+    isNew: true
   },
   {
     id: '6',
@@ -121,7 +123,8 @@ export const PRODUCTS: Product[] = [
     description: 'Fresh mint 2-piece suit, ideal for summer.',
     tags: ['women', 'casual', 'green'],
     sizes: SIZES,
-    discountPercentage: 38
+    discountPercentage: 38,
+    isNew: true
   },
   {
     id: '9',
@@ -134,7 +137,8 @@ export const PRODUCTS: Product[] = [
     description: 'Lovely lavender shade in a comfortable cut.',
     tags: ['women', 'casual', 'lavender'],
     sizes: SIZES,
-    discountPercentage: 36
+    discountPercentage: 36,
+    isNew: true
   },
   {
     id: '10',

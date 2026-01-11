@@ -131,7 +131,7 @@ const App: React.FC = () => {
   const getCollectionProducts = () => {
     switch (activeCategory) {
       case 'New Arrivals':
-        return PRODUCTS.slice(0, 10);
+        return PRODUCTS.filter(p => p.isNew);
       case 'Casual':
         return PRODUCTS.filter(p => p.category === 'Casual');
       case 'Festive':

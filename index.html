@@ -39,6 +39,8 @@
           }
         }
       }
+      // Polyfill process for browser environment to prevent ReferenceError if env vars aren't injected by build tool
+      window.process = window.process || { env: { API_KEY: '' } };
     </script>
     <style>
       .no-scrollbar::-webkit-scrollbar { display: none; }
@@ -59,5 +61,6 @@
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
   </body>
 </html>
