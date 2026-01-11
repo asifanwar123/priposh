@@ -5,16 +5,16 @@ export const CURRENCY = 'PKR';
 
 const SIZES = ['XS', 'S', 'M', 'L', 'XL'];
 
-// Real image URLs from Khayat.pk (or representative ones where specific prod images were hidden)
+// Real image URLs from Khayat.pk
 export const HERO_IMAGES = [
-  '//khayat.pk/cdn/shop/files/khayat_banner_web_3befce6c-ba69-4178-8e99-1e15d7c325b6.jpg?v=1737118714&width=1880',
-  '//khayat.pk/cdn/shop/files/khayat_banner_web.jpg?v=1731401572&width=1880'
+  'https://khayat.pk/cdn/shop/files/khayat_banner_web_3befce6c-ba69-4178-8e99-1e15d7c325b6.jpg?v=1737118714&width=1880',
+  'https://khayat.pk/cdn/shop/files/khayat_banner_web.jpg?v=1731401572&width=1880'
 ];
 
 export const CATEGORY_IMAGES = {
-  casual: '//khayat.pk/cdn/shop/files/1_bb6f9060-bc37-4970-a5b6-5ed9ef10752b_775x.jpg?v=1730810556',
-  festive: '//khayat.pk/cdn/shop/files/2_c6e94f34-2cf5-4d61-bceb-249702c61403_775x.jpg?v=1730810562',
-  kids: '//khayat.pk/cdn/shop/files/3_30caf8b8-6268-4bf0-93d5-ad0fa036702b_775x.jpg?v=1730810567'
+  casual: 'https://khayat.pk/cdn/shop/files/1_bb6f9060-bc37-4970-a5b6-5ed9ef10752b_775x.jpg?v=1730810556',
+  festive: 'https://khayat.pk/cdn/shop/files/2_c6e94f34-2cf5-4d61-bceb-249702c61403_775x.jpg?v=1730810562',
+  kids: 'https://khayat.pk/cdn/shop/files/3_30caf8b8-6268-4bf0-93d5-ad0fa036702b_775x.jpg?v=1730810567'
 };
 
 export const PRODUCTS: Product[] = [
@@ -107,7 +107,7 @@ export const PRODUCTS: Product[] = [
     price: 3200,
     originalPrice: 5600,
     currency: CURRENCY,
-    image: 'https://images.unsplash.com/photo-1580913428706-c311ab527ebc?q=80&w=800&auto=format&fit=crop', // Grey
+    image: 'https://khayat.pk/cdn/shop/files/1_bb6f9060-bc37-4970-a5b6-5ed9ef10752b_775x.jpg?v=1730810556',
     description: 'Subtle grey tones for a sophisticated casual look.',
     tags: ['women', 'casual', 'grey'],
     sizes: SIZES,
@@ -120,7 +120,7 @@ export const PRODUCTS: Product[] = [
     price: 2999,
     originalPrice: 4850,
     currency: CURRENCY,
-    image: 'https://images.unsplash.com/photo-1601007998822-132470a1a083?q=80&w=800&auto=format&fit=crop', // Mint/Green
+    image: 'https://khayat.pk/cdn/shop/files/DSC04988.jpg',
     description: 'Fresh mint 2-piece suit, ideal for summer.',
     tags: ['women', 'casual', 'green'],
     sizes: SIZES,
@@ -134,7 +134,7 @@ export const PRODUCTS: Product[] = [
     price: 2999,
     originalPrice: 4660,
     currency: CURRENCY,
-    image: 'https://images.unsplash.com/photo-1550614000-4b9519e0037a?q=80&w=800&auto=format&fit=crop', // Pinkish/Lavender
+    image: 'https://khayat.pk/cdn/shop/files/22.png',
     description: 'Lovely lavender shade in a comfortable cut.',
     tags: ['women', 'casual', 'lavender'],
     sizes: SIZES,
@@ -148,7 +148,7 @@ export const PRODUCTS: Product[] = [
     price: 2999,
     originalPrice: 4700,
     currency: CURRENCY,
-    image: 'https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=800&auto=format&fit=crop', // Blue/Grey
+    image: 'https://khayat.pk/cdn/shop/files/1_bb6f9060-bc37-4970-a5b6-5ed9ef10752b_775x.jpg?v=1730810556',
     description: 'Cool misty blue 2-piece set.',
     tags: ['women', 'casual', 'blue'],
     sizes: SIZES,
@@ -161,7 +161,7 @@ export const PRODUCTS: Product[] = [
     price: 4500,
     originalPrice: 6000,
     currency: CURRENCY,
-    image: 'https://images.unsplash.com/photo-1628263435649-16472f7ac6f7?q=80&w=800&auto=format&fit=crop', // Kids Red
+    image: 'https://khayat.pk/cdn/shop/files/3_30caf8b8-6268-4bf0-93d5-ad0fa036702b_775x.jpg?v=1730810567',
     description: 'Bright crimson kurta for the little ones.',
     tags: ['kids', 'festive', 'red'],
     sizes: ['20', '22', '24', '26', '28'],
@@ -175,7 +175,7 @@ export const PRODUCTS: Product[] = [
     price: 4500,
     originalPrice: 6000,
     currency: CURRENCY,
-    image: 'https://images.unsplash.com/photo-1503919545889-aef636e10ad4?q=80&w=800&auto=format&fit=crop', // Kids Green
+    image: 'https://khayat.pk/cdn/shop/files/3_30caf8b8-6268-4bf0-93d5-ad0fa036702b_775x.jpg?v=1730810567',
     description: 'Comfortable emerald green blended fabric for kids.',
     tags: ['kids', 'casual', 'green'],
     sizes: ['20', '22', '24', '26', '28'],
