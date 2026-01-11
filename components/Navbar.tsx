@@ -91,28 +91,33 @@ const Navbar: React.FC<NavbarProps> = ({
       {/* Main Navigation */}
       <nav className="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm transition-all duration-300">
         <div className="max-w-[1770px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20 md:h-24">
+          <div className="flex justify-between items-center h-20 md:h-28">
             
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center cursor-pointer md:w-[150px]" onClick={onHomeClick}>
-              <span className="font-heading text-2xl font-bold tracking-widest text-primary uppercase relative">
-                BAHZAD
-                <span className="absolute bottom-1.5 -right-3 w-2 h-2 bg-pink-500 rounded-full"></span>
-              </span>
+            <div className="flex-shrink-0 flex items-center cursor-pointer md:w-[220px]" onClick={onHomeClick}>
+               <div className="flex flex-col relative group">
+                  <h1 className="font-serif text-3xl md:text-5xl font-bold tracking-widest text-primary relative z-10 transition-colors duration-300 group-hover:text-gray-800">
+                    BAHZAD
+                    <span className="inline-block w-2 h-2 md:w-2.5 md:h-2.5 bg-pink-500 rounded-full ml-1 mb-1 md:mb-3 shadow-sm ring-2 ring-white"></span>
+                  </h1>
+                  <span className="text-[9px] md:text-[10px] font-sans font-medium tracking-[0.4em] text-gray-400 uppercase text-center -mt-1 group-hover:text-pink-500 transition-colors duration-300">
+                    Premium Wear
+                  </span>
+               </div>
             </div>
 
             {/* Desktop Menu (Center) */}
             <div className="hidden lg:flex items-center justify-center space-x-8 flex-1">
-              <button onClick={onHomeClick} className="text-primary hover:text-secondary text-[14px] font-bold tracking-widest uppercase transition-colors">Home</button>
-              <button onClick={() => handleNavClick('New Arrivals')} className="text-primary hover:text-secondary text-[14px] font-bold tracking-widest uppercase transition-colors">New Arrivals</button>
-              <button onClick={() => handleNavClick('Casual')} className="text-primary hover:text-secondary text-[14px] font-bold tracking-widest uppercase transition-colors">Casual</button>
-              <button onClick={() => handleNavClick('Festive')} className="text-primary hover:text-secondary text-[14px] font-bold tracking-widest uppercase transition-colors">Festive</button>
-              <button onClick={() => handleNavClick('Kids')} className="text-primary hover:text-secondary text-[14px] font-bold tracking-widest uppercase transition-colors">Kids</button>
-              <button onClick={() => handleNavClick('Sale')} className="text-sale hover:text-red-700 text-[14px] font-bold tracking-widest uppercase transition-colors">Sale</button>
+              <button onClick={onHomeClick} className="text-primary hover:text-secondary text-[13px] font-bold tracking-[0.15em] uppercase transition-colors">Home</button>
+              <button onClick={() => handleNavClick('New Arrivals')} className="text-primary hover:text-secondary text-[13px] font-bold tracking-[0.15em] uppercase transition-colors">New Arrivals</button>
+              <button onClick={() => handleNavClick('Casual')} className="text-primary hover:text-secondary text-[13px] font-bold tracking-[0.15em] uppercase transition-colors">Casual</button>
+              <button onClick={() => handleNavClick('Festive')} className="text-primary hover:text-secondary text-[13px] font-bold tracking-[0.15em] uppercase transition-colors">Festive</button>
+              <button onClick={() => handleNavClick('Kids')} className="text-primary hover:text-secondary text-[13px] font-bold tracking-[0.15em] uppercase transition-colors">Kids</button>
+              <button onClick={() => handleNavClick('Sale')} className="text-sale hover:text-red-700 text-[13px] font-bold tracking-[0.15em] uppercase transition-colors">Sale</button>
             </div>
 
             {/* Icons (Right) */}
-            <div className="flex items-center space-x-6 md:w-[150px] justify-end">
+            <div className="flex items-center space-x-6 md:w-[220px] justify-end">
               <div className="relative hidden md:block">
                 <button 
                   className={`text-primary hover:text-secondary transition-colors flex items-center ${user ? 'text-amber-600' : ''}`}
