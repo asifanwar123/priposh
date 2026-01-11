@@ -41,70 +41,78 @@ const PromotionalModal: React.FC = () => {
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity animate-fade-in-down" onClick={() => setIsOpen(false)} />
       
       {/* Modal Content */}
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-sm overflow-hidden animate-fade-in-up transform transition-all scale-100">
+      <div className="relative bg-white rounded-xl shadow-2xl w-full max-w-[340px] overflow-hidden animate-fade-in-up transform transition-all scale-100 p-6">
         
-        {/* Decorative Header */}
-        <div className="h-28 bg-primary relative overflow-hidden flex items-center justify-center">
-            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-500 via-gray-900 to-black"></div>
-             <button 
-                onClick={() => setIsOpen(false)}
-                className="absolute top-3 right-3 bg-white/10 hover:bg-white/20 p-1 rounded-full text-white transition-colors z-10"
-            >
-                <X className="h-5 w-5" />
-            </button>
+        {/* Close Button */}
+        <button 
+            onClick={() => setIsOpen(false)}
+            className="absolute top-3 right-3 text-gray-300 hover:text-gray-500 transition-colors z-20"
+        >
+            <X className="h-5 w-5" />
+        </button>
+
+        {/* Brand Logo - Top & Center (Matching Website Style) */}
+        <div className="flex flex-col items-center justify-center mb-6 pt-2">
+            <h1 className="font-serif text-3xl font-bold tracking-widest text-primary relative z-10 whitespace-nowrap">
+            PARI POSH
+            <span className="inline-block w-2 h-2 bg-pink-500 rounded-full ml-1 mb-2 shadow-sm ring-2 ring-white"></span>
+            </h1>
+            <span className="text-[9px] font-sans font-medium tracking-[0.4em] text-gray-400 uppercase text-center -mt-1">
+            Premium Wear
+            </span>
         </div>
 
-        {/* CEO Image & Brand */}
-        <div className="relative -mt-14 flex flex-col items-center px-6">
-            <div className="w-28 h-28 rounded-full border-4 border-white shadow-lg overflow-hidden bg-gray-200">
-                <img src={CEO_IMAGE} alt="Muhammad Behzad Faisal" className="w-full h-full object-cover" />
+        {/* CEO Section */}
+        <div className="flex flex-col items-center text-center">
+            {/* CEO Picture */}
+            <div className="w-16 h-16 rounded-full border border-gray-100 p-1 shadow-sm mb-3">
+                <img src={CEO_IMAGE} alt="Muhammad Behzad Faisal" className="w-full h-full object-cover rounded-full" />
             </div>
             
-            <div className="mt-3 text-center">
-                 <h2 className="font-serif text-xl font-bold text-primary tracking-widest">PARI POSH</h2>
-                 <p className="text-[10px] uppercase tracking-[0.3em] text-gray-400">Premium Eastern Wear</p>
+            {/* Random Message */}
+            <div className="mb-6 relative px-1">
+                <p className="text-gray-600 italic font-serif text-xs leading-relaxed">
+                    "{message}"
+                </p>
+                <div className="mt-2">
+                    <p className="text-xs font-bold text-primary">Muhammad Behzad Faisal</p>
+                    <p className="text-[9px] text-gray-400 uppercase tracking-wider">Founder & CEO</p>
+                </div>
             </div>
         </div>
 
-        {/* Content */}
-        <div className="px-6 pb-8 pt-4 text-center">
-            <div className="mb-6 relative">
-                <span className="absolute -top-4 left-0 text-4xl text-gray-200 font-serif">"</span>
-                <p className="text-gray-600 italic font-serif text-sm leading-relaxed px-4">
-                    {message}
-                </p>
-                <span className="absolute -bottom-4 right-0 text-4xl text-gray-200 font-serif leading-3">"</span>
-                
-                <div className="mt-3">
-                    <p className="text-sm font-bold text-primary">Muhammad Behzad Faisal</p>
-                    <p className="text-[10px] text-gray-500 uppercase tracking-wider">Founder & CEO</p>
-                </div>
-            </div>
-
-            <div className="space-y-3">
-                <a 
-                    href="https://wa.me/923275247247" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-md group"
-                >
-                    <MessageCircle className="w-5 h-5 mr-2 group-hover:animate-bounce" />
-                    Chat on WhatsApp
-                </a>
-                
-                <div className="pt-4 border-t border-gray-100 flex flex-col items-center gap-3">
-                    <p className="text-xs text-gray-400 font-medium uppercase tracking-wide">Connect With Us</p>
-                    <div className="flex justify-center gap-4">
-                        <a href="mailto:mbfaisal247@gmail.com" className="p-2 bg-gray-50 text-gray-600 rounded-full hover:bg-gray-200 transition-colors" title="Email">
-                            <Mail className="w-5 h-5" />
-                        </a>
-                        <a href="#" className="p-2 bg-gray-50 text-gray-600 rounded-full hover:bg-[#1877F2] hover:text-white transition-colors" title="Facebook">
-                            <Facebook className="w-5 h-5" />
-                        </a>
-                        <a href="#" className="p-2 bg-gray-50 text-gray-600 rounded-full hover:bg-[#E4405F] hover:text-white transition-colors" title="Instagram">
-                            <Instagram className="w-5 h-5" />
-                        </a>
-                    </div>
+        {/* Actions */}
+        <div className="space-y-4">
+            {/* WhatsApp Quick Link */}
+            <a 
+                href="https://wa.me/923275247247" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-md group"
+            >
+                <MessageCircle className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+                Chat on WhatsApp
+            </a>
+            
+            {/* Social Links & Email */}
+            <div className="pt-2 border-t border-gray-50">
+                <p className="text-[10px] text-center text-gray-300 font-medium uppercase tracking-wide mb-3">Stay Connected</p>
+                <div className="flex justify-center gap-6">
+                    <a href="mailto:mbfaisal247@gmail.com" className="group flex flex-col items-center gap-1 text-gray-400 hover:text-gray-600 transition-colors">
+                        <div className="p-2 bg-gray-50 rounded-full group-hover:bg-gray-100 transition-colors">
+                            <Mail className="w-4 h-4" />
+                        </div>
+                    </a>
+                    <a href="#" className="group flex flex-col items-center gap-1 text-gray-400 hover:text-[#1877F2] transition-colors">
+                        <div className="p-2 bg-gray-50 rounded-full group-hover:bg-blue-50 transition-colors">
+                            <Facebook className="w-4 h-4" />
+                        </div>
+                    </a>
+                    <a href="#" className="group flex flex-col items-center gap-1 text-gray-400 hover:text-[#E4405F] transition-colors">
+                        <div className="p-2 bg-gray-50 rounded-full group-hover:bg-pink-50 transition-colors">
+                            <Instagram className="w-4 h-4" />
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
