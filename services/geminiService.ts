@@ -1,3 +1,4 @@
+
 import { GoogleGenAI } from "@google/genai";
 import { PRODUCTS } from '../constants';
 
@@ -5,7 +6,7 @@ const apiKey = process.env.API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 
 const SYSTEM_INSTRUCTION = `
-You are "Kay", a high-end fashion consultant for "Bahzad", a premium men's ethnic wear brand.
+You are "Kay", a high-end fashion consultant for "Pari Posh", a premium men's ethnic wear brand.
 Your goal is to assist customers in choosing the perfect outfit from our catalog.
 Be polite, sophisticated, and helpful. Keep answers concise (under 80 words) unless asked for details.
 

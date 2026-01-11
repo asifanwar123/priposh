@@ -1,3 +1,4 @@
+
 import { Product } from './types';
 
 export const CURRENCY = 'PKR';
@@ -74,7 +75,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '5',
-    name: 'Bahzad - Tea Pink',
+    name: 'Pari Posh - Tea Pink',
     category: 'Casual',
     price: 3950,
     originalPrice: 5600,
@@ -88,7 +89,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '6',
-    name: 'Bahzad - Melbury',
+    name: 'Pari Posh - Melbury',
     category: 'Casual',
     price: 3950,
     originalPrice: 5600,
@@ -101,7 +102,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '7',
-    name: 'Bahzad - Greyish',
+    name: 'Pari Posh - Greyish',
     category: 'Casual',
     price: 3200,
     originalPrice: 5600,
@@ -155,7 +156,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '11',
-    name: 'Bahzad Junior - Crimson',
+    name: 'Pari Posh Junior - Crimson',
     category: 'Kids',
     price: 4500,
     originalPrice: 6000,
@@ -169,7 +170,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '12',
-    name: 'Bahzad Junior - Emerald',
+    name: 'Pari Posh Junior - Emerald',
     category: 'Kids',
     price: 4500,
     originalPrice: 6000,
@@ -188,20 +189,20 @@ export const STATIC_PAGES_CONTENT: Record<string, { title: string, content: stri
   'Our Story': {
     title: 'Our Story',
     content: `
-      <p class="mb-4">Bahzad was born from a desire to bridge the gap between traditional Eastern heritage and contemporary fashion sensibilities. Established in 2020, we started as a small boutique with a big vision: to create premium ethnic wear that resonates with the modern individual.</p>
+      <p class="mb-4">Pari Posh was born from a desire to bridge the gap between traditional Eastern heritage and contemporary fashion sensibilities. Established in 2020, we started as a small boutique with a big vision: to create premium ethnic wear that resonates with the modern individual.</p>
       <p class="mb-4">Our journey began in the heart of the textile district, where we rediscovered the beauty of artisanal craftsmanship. We believe that clothing is not just about covering the body, but about expressing identity and culture. Each piece in our collection is a testament to this belief, crafted with the finest fabrics and intricate detailing.</p>
-      <p class="mb-4">Today, Bahzad is more than just a brand; it's a celebration of elegance, comfort, and timeless style. We are committed to sustainable practices and ethical sourcing, ensuring that our growth contributes positively to the community and the environment.</p>
+      <p class="mb-4">Today, Pari Posh is more than just a brand; it's a celebration of elegance, comfort, and timeless style. We are committed to sustainable practices and ethical sourcing, ensuring that our growth contributes positively to the community and the environment.</p>
       <p class="mb-8">Thank you for being part of our story.</p>
 
       <div class="mt-12 border-t border-gray-200 pt-8">
         <h3 class="font-heading font-bold text-2xl text-primary text-center mb-8 uppercase tracking-widest">CEO Message</h3>
         <div class="flex flex-col md:flex-row items-center gap-8 justify-center">
           <div class="w-48 h-48 flex-shrink-0 overflow-hidden rounded-full border-4 border-gray-100 shadow-lg">
-            <img src="https://scontent.flhe6-1.fna.fbcdn.net/v/t39.30808-6/480096217_122098691768772817_5002006631407603851_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0wKAytSaz3gQ7kNvwE1JmvU&_nc_oc=AdnQ5c3JqW2hAc0u3fIBOZwH0JhPMHrzQlFQOP3MeAYgFmZCXd6YZooHyVn84op_AqU&_nc_zt=23&_nc_ht=scontent.flhe6-1.fna&_nc_gid=7zR6OvYUirWJxE7n7iwkoQ&oh=00_Afpt8ZrstJJ_jCFR8hYw3RfxLj_uVllwsqFRq61m5osL-Q&oe=69692035" alt="Muhammad Bahzad Faisal" class="w-full h-full object-cover">
+            <img src="https://scontent.flhe6-1.fna.fbcdn.net/v/t39.30808-6/480096217_122098691768772817_5002006631407603851_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0wKAytSaz3gQ7kNvwE1JmvU&_nc_oc=AdnQ5c3JqW2hAc0u3fIBOZwH0JhPMHrzQlFQOP3MeAYgFmZCXd6YZooHyVn84op_AqU&_nc_zt=23&_nc_ht=scontent.flhe6-1.fna&_nc_gid=7zR6OvYUirWJxE7n7iwkoQ&oh=00_Afpt8ZrstJJ_jCFR8hYw3RfxLj_uVllwsqFRq61m5osL-Q&oe=69692035" alt="Muhammad Behzad Faisal" class="w-full h-full object-cover">
           </div>
           <div class="text-center md:text-left max-w-lg">
              <blockquote class="italic text-gray-600 text-lg mb-4">"We don't just sell clothes; we craft experiences that honor our traditions while embracing the future. Every stitch tells a story of passion and dedication."</blockquote>
-             <p class="font-bold text-primary text-xl">Muhammad Bahzad Faisal</p>
+             <p class="font-bold text-primary text-xl">Muhammad Behzad Faisal</p>
              <p class="text-secondary text-sm uppercase tracking-wider">Founder & CEO</p>
           </div>
         </div>
@@ -287,7 +288,7 @@ export const STATIC_PAGES_CONTENT: Record<string, { title: string, content: stri
   'Wholesale': {
     title: 'Wholesale Inquiries',
     content: `
-      <p class="mb-4">Bahzad offers wholesale opportunities for retailers interested in stocking our premium eastern wear collections. We value partnerships that align with our commitment to quality and style.</p>
+      <p class="mb-4">Pari Posh offers wholesale opportunities for retailers interested in stocking our premium eastern wear collections. We value partnerships that align with our commitment to quality and style.</p>
       
       <h3 class="font-bold text-lg mb-2">Requirements</h3>
       <ul class="list-disc pl-5 mb-4">
@@ -296,7 +297,7 @@ export const STATIC_PAGES_CONTENT: Record<string, { title: string, content: stri
         <li>Minimum opening order of PKR 200,000.</li>
       </ul>
       
-      <p class="mb-4">To apply for a wholesale account, please email us at <strong>wholesale@bahzad.pk</strong> with your business details, location, and a brief description of your store. Our sales team will review your application and get back to you within 3-5 business days.</p>
+      <p class="mb-4">To apply for a wholesale account, please email us at <strong>mbfaisal247@gmail.com</strong> with your business details, location, and a brief description of your store. Our sales team will review your application and get back to you within 3-5 business days.</p>
     `
   },
   'Contact Us': {
@@ -307,8 +308,8 @@ export const STATIC_PAGES_CONTENT: Record<string, { title: string, content: stri
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-gray-50 p-6 rounded-lg">
           <h3 class="font-bold text-lg mb-2">Customer Care</h3>
-          <p class="mb-1"><strong>Email:</strong> support@bahzad.pk</p>
-          <p class="mb-1"><strong>Phone/WhatsApp:</strong> +923056622557</p>
+          <p class="mb-1"><strong>Email:</strong> mbfaisal247@gmail.com</p>
+          <p class="mb-1"><strong>WhatsApp:</strong> <a href="https://wa.me/923275247247" target="_blank" class="text-amber-600 hover:underline">032 75 247247</a></p>
           <p><strong>Hours:</strong> Mon-Sat, 10:00 AM - 6:00 PM (PKT)</p>
         </div>
         
@@ -322,7 +323,7 @@ export const STATIC_PAGES_CONTENT: Record<string, { title: string, content: stri
   'Our Policies': {
     title: 'Our Policies',
     content: `
-      <p class="mb-4">At Bahzad, we are committed to transparency and fairness. Our policies are designed to protect both our customers and our business operations.</p>
+      <p class="mb-4">At Pari Posh, we are committed to transparency and fairness. Our policies are designed to protect both our customers and our business operations.</p>
       <p class="mb-4">Please review the specific sections regarding Returns, Shipping, and Privacy found in the footer links to understand how we operate.</p>
       <p>We reserve the right to update these policies at any time without prior notice. Continued use of our website constitutes acceptance of these policies.</p>
     `
@@ -330,10 +331,10 @@ export const STATIC_PAGES_CONTENT: Record<string, { title: string, content: stri
   'Terms and Conditions': {
     title: 'Terms & Conditions',
     content: `
-      <p class="mb-4">Welcome to Bahzad. By accessing this website, you agree to comply with and be bound by the following terms and conditions of use.</p>
+      <p class="mb-4">Welcome to Pari Posh. By accessing this website, you agree to comply with and be bound by the following terms and conditions of use.</p>
       
       <h3 class="font-bold text-lg mb-2">Intellectual Property</h3>
-      <p class="mb-4">The content of the pages of this website is for your general information and use only. All trademarks, logos, and images reproduced in this website are the property of Bahzad.</p>
+      <p class="mb-4">The content of the pages of this website is for your general information and use only. All trademarks, logos, and images reproduced in this website are the property of Pari Posh.</p>
       
       <h3 class="font-bold text-lg mb-2">Pricing</h3>
       <p class="mb-4">Prices are subject to change without notice. We make every effort to ensure accuracy, but errors may occur. We reserve the right to cancel orders arising from pricing errors.</p>

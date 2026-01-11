@@ -128,7 +128,7 @@ const Footer: React.FC<FooterProps> = ({ onCategoryClick, onHomeClick, onPageCli
       <div className="bg-[#727272] py-5">
         <div className="max-w-[1170px] mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
           <p className="text-[12px] text-white">
-            © 2025 Bahzad. Powered By <a href="https://asifanwar.online" target="_blank" rel="noopener noreferrer" className="hover:underline">asifanwar.online</a>
+            © 2025 Pari Posh. Powered By <a href="https://asifanwar.online" target="_blank" rel="noopener noreferrer" className="hover:underline">asifanwar.online</a>
           </p>
         </div>
       </div>

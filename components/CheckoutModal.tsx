@@ -112,7 +112,7 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose, total, o
                 <span className="text-sm font-medium text-gray-700">Meezan Bank Transfer</span>
              </div>
              <div className="text-sm text-gray-600 bg-white p-3 rounded border border-gray-200">
-                <p className="font-bold">Account Title: Bahzad Apparel</p>
+                <p className="font-bold">Account Title: Pari Posh Apparel</p>
                 <p>Account No: 0101-0101234567</p>
                 <p>IBAN: PK00MEZN0001010101234567</p>
              </div>

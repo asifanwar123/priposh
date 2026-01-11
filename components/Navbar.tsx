@@ -94,13 +94,13 @@ const Navbar: React.FC<NavbarProps> = ({
           <div className="flex justify-between items-center h-20 md:h-28">
             
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center cursor-pointer md:w-[220px]" onClick={onHomeClick}>
+            <div className="flex-shrink-0 flex items-center cursor-pointer md:w-auto" onClick={onHomeClick}>
                <div className="flex flex-col relative group">
-                  <h1 className="font-serif text-3xl md:text-5xl font-bold tracking-widest text-primary relative z-10 transition-colors duration-300 group-hover:text-gray-800">
-                    BAHZAD
-                    <span className="inline-block w-2 h-2 md:w-2.5 md:h-2.5 bg-pink-500 rounded-full ml-1 mb-1 md:mb-3 shadow-sm ring-2 ring-white"></span>
+                  <h1 className="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-widest text-primary relative z-10 transition-colors duration-300 group-hover:text-gray-800 whitespace-nowrap">
+                    PARI POSH
+                    <span className="inline-block w-1.5 h-1.5 sm:w-2 sm:h-2 bg-pink-500 rounded-full ml-1 mb-1 sm:mb-2 shadow-sm ring-1 sm:ring-2 ring-white"></span>
                   </h1>
-                  <span className="text-[9px] md:text-[10px] font-sans font-medium tracking-[0.4em] text-gray-400 uppercase text-center -mt-1 group-hover:text-pink-500 transition-colors duration-300">
+                  <span className="text-[8px] sm:text-[9px] font-sans font-medium tracking-[0.4em] text-gray-400 uppercase text-center -mt-1 group-hover:text-pink-500 transition-colors duration-300">
                     Premium Wear
                   </span>
                </div>
@@ -117,7 +117,7 @@ const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             {/* Icons (Right) */}
-            <div className="flex items-center space-x-6 md:w-[220px] justify-end">
+            <div className="flex items-center space-x-4 md:space-x-6 justify-end flex-shrink-0">
               <div className="relative hidden md:block">
                 <button 
                   className={`text-primary hover:text-secondary transition-colors flex items-center ${user ? 'text-amber-600' : ''}`}

@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Sparkles } from 'lucide-react';
 import { generateStylingAdvice } from '../services/geminiService';
@@ -6,7 +7,7 @@ import { ChatMessage } from '../types';
 const AiStylist: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: 'Hello! I am Kay, your personal stylist at Bahzad. Looking for something specific today?' }
+    { role: 'model', text: 'Hello! I am Kay, your personal stylist at Pari Posh. Looking for something specific today?' }
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);

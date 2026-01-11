@@ -165,7 +165,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLoginSuccess
             )}
             
             <p className="text-xs text-center text-gray-400 mt-6">
-              By continuing, you agree to Bahzad's Terms of Use and Privacy Policy.
+              By continuing, you agree to Pari Posh's Terms of Use and Privacy Policy.
             </p>
           </div>
         </div>
