@@ -95,7 +95,10 @@ const Navbar: React.FC<NavbarProps> = ({
             
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center cursor-pointer md:w-[150px]" onClick={onHomeClick}>
-              <span className="font-heading text-2xl font-bold tracking-widest text-primary uppercase">BAHZAD</span>
+              <span className="font-heading text-2xl font-bold tracking-widest text-primary uppercase relative">
+                BAHZAD
+                <span className="absolute bottom-1.5 -right-3 w-2 h-2 bg-pink-500 rounded-full"></span>
+              </span>
             </div>
 
             {/* Desktop Menu (Center) */}
