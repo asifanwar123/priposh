@@ -304,6 +304,7 @@ const App: React.FC = () => {
         total={cartTotal}
         onSuccess={handleCheckoutSuccess}
         user={user}
+        cartItems={cartItems}
       />
 
       <LoginModal 

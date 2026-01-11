@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { X, CreditCard, Loader2, CheckCircle, Truck, ShieldCheck, Banknote, Smartphone, Building2 } from 'lucide-react';
-import { PaymentMethod, User } from '../types';
+import { PaymentMethod, User, CartItem } from '../types';
 
 interface CheckoutModalProps {
   isOpen: boolean;
@@ -9,9 +9,10 @@ interface CheckoutModalProps {
   total: number;
   onSuccess: () => void;
   user: User | null;
+  cartItems: CartItem[];
 }
 
-const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose, total, onSuccess, user }) => {
+const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose, total, onSuccess, user, cartItems }) => {
   const [step, setStep] = useState<1 | 2 | 3>(1); // 1: Shipping, 2: Payment, 3: Success
   const [loading, setLoading] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('COD');
@@ -46,17 +47,51 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose, total, o
     setStep(2);
   };
 
+  const sendOrderToWhatsapp = () => {
+    const orderId = Math.floor(100000 + Math.random() * 900000);
+    const date = new Date().toLocaleString();
+    
+    let message = `*🌟 New Order Placed! 🌟*\n`;
+    message += `Order ID: #${orderId}\n`;
+    message += `Date: ${date}\n\n`;
+    
+    message += `*👤 Customer Details:*\n`;
+    message += `Name: ${shippingDetails.firstName} ${shippingDetails.lastName}\n`;
+    message += `Phone: ${shippingDetails.phone}\n`;
+    message += `Address: ${shippingDetails.address}, ${shippingDetails.city} (${shippingDetails.postalCode})\n\n`;
+    
+    message += `*🛒 Order Summary:*\n`;
+    cartItems.forEach(item => {
+      message += `- ${item.name} | Size: ${item.selectedSize} | Qty: ${item.quantity} | Price: ${item.currency} ${item.price.toLocaleString()}\n`;
+    });
+    
+    message += `\n*💰 Total Amount:* PKR ${total.toLocaleString()}\n`;
+    message += `*💳 Payment Method:* ${paymentMethod}\n`;
+    message += `------------------------\n`;
+    message += `Please confirm my order. Thank you!`;
+    
+    const phoneNumber = "923275247247"; // Pari Posh WhatsApp Number
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+  };
+
   const handlePaymentSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate API call
+    
+    // Simulate API processing
     setTimeout(() => {
       setLoading(false);
+      
+      // Send to WhatsApp
+      sendOrderToWhatsapp();
+      
       setStep(3);
       setTimeout(() => {
         onSuccess();
         onClose();
-      }, 4000);
+      }, 5000); // Give user a moment to see success before closing
     }, 2000);
   };
 
@@ -261,7 +296,7 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose, total, o
                     </div>
                     <h3 className="mt-4 text-2xl font-medium text-gray-900 font-serif">Order Confirmed!</h3>
                     <p className="mt-2 text-sm text-gray-500">
-                      Thank you for your purchase. You will receive an SMS confirmation on {shippingDetails.phone} shortly.
+                      Thank you for your purchase. We have opened WhatsApp to confirm your order details.
                     </p>
                     <div className="mt-6 flex justify-center text-amber-600">
                         <Truck className="w-5 h-5 mr-2" />
